@@ -1,0 +1,13 @@
+ERROR - 2023-05-11 03:57:51 --> mysqli_sql_exception: Duplicate entry 'test@mail.com' for key 'email' in C:\xampp\htdocs\belajarci\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\belajarci\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\belajarci\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\belajarci\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\belajarci\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\belajarci\app\Database\Seeds\UserSeeder.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\belajarci\system\Database\Seeder.php(146): App\Database\Seeds\UserSeeder->run()
+#6 C:\xampp\htdocs\belajarci\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\belajarci\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\belajarci\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\belajarci\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
